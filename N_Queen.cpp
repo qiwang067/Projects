@@ -3,11 +3,11 @@
 #include<cmath>
 using namespace std;
 
-//º¯Êı¶¨Òå 
+//å‡½æ•°å®šä¹‰ 
 void Try(int);
 int Check(int a[],int n);
 
-int a[100],n,i,count=0;//È«¾Ö±äÁ¿,Êı×éaµÄ´óĞ¡¸ù¾İ»ÊºóµÄÊıÁ¿¶ø¶¨ 
+int a[100],n,i,count=0;//å…¨å±€å˜é‡,æ•°ç»„açš„å¤§å°æ ¹æ®çš‡åçš„æ•°é‡è€Œå®š 
 
 
 int main() {
@@ -18,7 +18,7 @@ int main() {
 	return 0;
 }
 
-int Check(int a[],int n) {    //¼ôÖ¦º¯Êı£¬¼ì²âÎ»ÖÃÊÇ·ñ³åÍ»
+int Check(int a[],int n) {    //å‰ªæå‡½æ•°ï¼Œæ£€æµ‹ä½ç½®æ˜¯å¦å†²çª
 	for(int i=1; i<n; i++) {
 		if(a[i]==a[n]||abs(i-n)==abs(a[i]-a[n]))
 			return 0;
@@ -28,7 +28,7 @@ int Check(int a[],int n) {    //¼ôÖ¦º¯Êı£¬¼ì²âÎ»ÖÃÊÇ·ñ³åÍ»
 
 
 
-//µİ¹éÊµÏÖÉî¶ÈÓÅÏÈËÑË÷,iÊÇĞĞÊı£¬a[i]ÊÇÁĞÊı 
+//é€’å½’å®ç°æ·±åº¦ä¼˜å…ˆæœç´¢,iæ˜¯è¡Œæ•°ï¼Œa[i]æ˜¯åˆ—æ•° 
 void Try(int i) {
 	for(int j=1; j<=n; j++) {
 		a[i]=j;
@@ -43,7 +43,7 @@ void Try(int i) {
 				for(int i=1; i<=n; i++) {
 					b[i][a[i]]=1;
 				}
-				//´òÓ¡°Ë»Êºó 
+				//æ‰“å°å…«çš‡å 
 				for(int i=1; i<n+1; i++)
 				{
 					for(int j=1; j<n+1; j++)
@@ -51,8 +51,7 @@ void Try(int i) {
 						cout<<b[i][j]<<" ";
 					}
 					cout<<endl;
-				}
-					
+				}				
 
 			}
 		}
