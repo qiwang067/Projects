@@ -1,1 +1,1 @@
-# some useful projects and little codes 
+# some projects and funny code
