@@ -1,1 +1,1 @@
-# some projects and funny code
+# some projects 
